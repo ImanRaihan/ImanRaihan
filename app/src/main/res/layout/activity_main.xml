@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/judulKertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Kertas"
+        android:textSize="40sp"
+        android:layout_marginTop="45dp"
+        android:rotation="-15"
+        android:textStyle="bold"
+        android:textColor="@color/orangeshade"/>
+
+    <TextView
+        android:id="@+id/judulGunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Gunting"
+        android:textSize="40sp"
+        android:layout_marginTop="-20dp"
+        android:rotation="-15"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/ferd"/>
+
+    <TextView
+        android:id="@+id/judulBatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batu"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:rotation="-15"
+        android:layout_marginLeft="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/cuspurple"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1"
+                android:textSize="25sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65dp"
+                android:textStyle="bold"
+                android:textColor="@color/cusblue"/>
+
+            <TextView
+                android:id="@+id/com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COM"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="190dp"
+                android:textSize="25dp"
+                android:textColor="@color/cusblue"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btnBatuPlayer"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/batu"
+                android:backgroundTint="@color/warmblue" />
+
+            <ImageButton
+                android:id="@+id/btnBatuBot"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="165dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/batu"
+                android:backgroundTint="@color/warmblue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btnKertasPlayer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kertas"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/warmblue"/>
+
+            <ImageButton
+                android:id="@+id/btnKertasBot"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kertas"
+                android:layout_marginLeft="165dp"
+                android:backgroundTint="@color/warmblue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btnGuntingPlayer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gunting"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/warmblue"/>
+
+            <ImageButton
+                android:id="@+id/btnGuntingBot"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gunting"
+                android:layout_marginLeft="165dp"
+                android:backgroundTint="@color/warmblue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tandaPermainan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textColor="@color/red"
+        android:textSize="65sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-210dp"
+        android:textStyle="bold"
+        android:rotation="-15"
+        android:background="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/btnReset"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/refresh"/>
+
+</LinearLayout>
